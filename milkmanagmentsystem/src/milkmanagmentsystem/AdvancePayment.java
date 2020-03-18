@@ -323,7 +323,7 @@ public class AdvancePayment extends JFrame {
 		contentPane.add(panel_2);
 		
 		JLabel lblNewLabel = new JLabel("Advance Payment");
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 30));
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 30));
 		lblNewLabel.setBounds(268, 0, 320, 46);
 		contentPane.add(lblNewLabel);
 		

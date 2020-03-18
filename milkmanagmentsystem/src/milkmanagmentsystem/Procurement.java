@@ -265,8 +265,8 @@ public class Procurement extends JFrame {
 		TotalAmount.setColumns(10);
 		
 		JLabel lblNewLabel_9 = new JLabel("MILK COLLECTION");
-		lblNewLabel_9.setFont(new Font("Tahoma", Font.PLAIN, 30));
-		lblNewLabel_9.setBounds(307, 0, 283, 30);
+		lblNewLabel_9.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 30));
+		lblNewLabel_9.setBounds(307, 0, 297, 30);
 		contentPane.add(lblNewLabel_9);
 		
 		JLabel lblNewLabel_3 = new JLabel("AccountNo:");
@@ -297,7 +297,7 @@ public class Procurement extends JFrame {
 		contentPane.add(IFSCCode);
 		IFSCCode.setColumns(10);
 		
-		JLabel lblNewLabel_20 = new JLabel("Litres/price:");
+		JLabel lblNewLabel_20 = new JLabel("Price/Litre");
 		lblNewLabel_20.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblNewLabel_20.setBounds(273, 200, 93, 32);
 		contentPane.add(lblNewLabel_20);
@@ -331,8 +331,8 @@ public class Procurement extends JFrame {
 				float f = Float.parseFloat(FAT.getText());
 				float s = Float.parseFloat(SNF.getText());
 				float c = Float.parseFloat(CLR.getText());
-				
-				String a=String.format("%.2f",( L*Lp)+(f+s+c));
+				double snf=((c/4)+0.25*(f/100)+0.35);
+				String a=String.format("%.2f",( L*Lp)+(f+snf+c));
 				TotalAmount.setText(a);
 				
 			}
@@ -431,12 +431,12 @@ public class Procurement extends JFrame {
 				public void ancestorRemoved(AncestorEvent arg0) {
 				}
 			});
-			DOB.setBounds(563, 129, 140, 20);
+			DOB.setBounds(95, 125, 140, 20);
 			contentPane.add(DOB);
 		
 		JLabel lblNewLabel_10 = new JLabel("Collecton Details");
-		lblNewLabel_10.setFont(new Font("Tahoma", Font.ITALIC, 15));
-		lblNewLabel_10.setBounds(24, 155, 112, 14);
+		lblNewLabel_10.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 15));
+		lblNewLabel_10.setBounds(24, 155, 140, 14);
 		contentPane.add(lblNewLabel_10);
 		
 		JPanel panel = new JPanel();
@@ -445,15 +445,9 @@ public class Procurement extends JFrame {
 		panel.setBounds(10, 172, 606, 157);
 		contentPane.add(panel);
 		
-		JPanel panel_1 = new JPanel();
-		panel_1.setBackground(new Color(245, 255, 250));      
-		panel_1.setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
-		panel_1.setBounds(270, 0, 321, 39);
-		contentPane.add(panel_1);
-		
 		JLabel lblNewLabel_12 = new JLabel("Date:");
 		lblNewLabel_12.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblNewLabel_12.setBounds(519, 129, 46, 20);
+		lblNewLabel_12.setBounds(52, 125, 46, 20);
 		contentPane.add(lblNewLabel_12);
 		
 		JLabel lblNewLabel_11 = new JLabel("New label");

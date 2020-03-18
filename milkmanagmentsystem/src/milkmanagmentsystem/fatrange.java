@@ -162,7 +162,7 @@ public class fatrange extends JFrame {
 						sta.close();
 				}
 				catch(Exception E) {
-					JOptionPane.showConfirmDialog(null, "Some thing went Wrong");
+					JOptionPane.showConfirmDialog(null, "Something went Wrong");
 					E.printStackTrace();
 							
 				}

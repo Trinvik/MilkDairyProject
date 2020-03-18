@@ -93,7 +93,7 @@ public class FeedIssue extends JFrame {
 		connection=Dbconnection.dbconnect();
 		setTitle("MILKMANAGEMENTSYSTEM");
 		//setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1000, 466);
+		setBounds(100, 100, 890, 466);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(245, 255, 250));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -102,26 +102,26 @@ public class FeedIssue extends JFrame {
 		
 		JLabel lblNewLabel_1 = new JLabel("MemberId:");
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblNewLabel_1.setBounds(28, 84, 95, 19);
+		lblNewLabel_1.setBounds(33, 130, 75, 19);
 		contentPane.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Name:");
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblNewLabel_2.setBounds(53, 126, 46, 14);
+		lblNewLabel_2.setBounds(62, 173, 46, 14);
 		contentPane.add(lblNewLabel_2);
 		
 		Name = new JTextField();
-		Name.setBounds(114, 125, 132, 20);
+		Name.setBounds(114, 172, 132, 20);
 		contentPane.add(Name);
 		Name.setColumns(10);
 		
 		JLabel lblNewLabel_3 = new JLabel("AccountNo:");
 		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblNewLabel_3.setBounds(24, 163, 75, 14);
+		lblNewLabel_3.setBounds(33, 215, 75, 14);
 		contentPane.add(lblNewLabel_3);
 		
 		AccountNo = new JTextField();
-		AccountNo.setBounds(114, 162, 132, 20);
+		AccountNo.setBounds(114, 214, 132, 20);
 		contentPane.add(AccountNo);
 		AccountNo.setColumns(10);
 		
@@ -152,46 +152,46 @@ public class FeedIssue extends JFrame {
 				
 			}
 		});
-		comb.setBounds(114, 85, 132, 18);
+		comb.setBounds(114, 132, 132, 18);
 		contentPane.add(comb);
 		
 		JLabel lblNewLabel_4 = new JLabel("IFSC Code:");
 		lblNewLabel_4.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblNewLabel_4.setBounds(24, 200, 75, 19);
+		lblNewLabel_4.setBounds(33, 254, 75, 19);
 		contentPane.add(lblNewLabel_4);
 		
 		IFSCCode = new JTextField();
-		IFSCCode.setBounds(114, 201, 132, 20);
+		IFSCCode.setBounds(114, 255, 132, 20);
 		contentPane.add(IFSCCode);
 		IFSCCode.setColumns(10);
 		
 		JLabel lblNewLabel_5 = new JLabel("No.of Bags:");
 		lblNewLabel_5.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblNewLabel_5.setBounds(24, 231, 86, 19);
+		lblNewLabel_5.setBounds(28, 298, 86, 19);
 		contentPane.add(lblNewLabel_5);
 		
 		bag = new JTextField();
-		bag.setBounds(114, 232, 132, 20);
+		bag.setBounds(114, 297, 132, 20);
 		contentPane.add(bag);
 		bag.setColumns(10);
 		
 		JLabel lblNewLabel_6 = new JLabel("FeedPrice:");
 		lblNewLabel_6.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblNewLabel_6.setBounds(34, 271, 75, 19);
+		lblNewLabel_6.setBounds(35, 330, 75, 19);
 		contentPane.add(lblNewLabel_6);
 		
 		Feed = new JTextField();
-		Feed.setBounds(114, 272, 132, 20);
+		Feed.setBounds(114, 331, 132, 20);
 		contentPane.add(Feed);
 		Feed.setColumns(10);
 		
 		JLabel lblNewLabel_7 = new JLabel("Total Amount:");
 		lblNewLabel_7.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblNewLabel_7.setBounds(10, 317, 95, 26);
+		lblNewLabel_7.setBounds(15, 362, 95, 26);
 		contentPane.add(lblNewLabel_7);
 		
 		TA = new JTextField();
-		TA.setBounds(114, 322, 132, 20);
+		TA.setBounds(114, 367, 132, 20);
 		contentPane.add(TA);
 		TA.setColumns(10);
 		
@@ -240,11 +240,11 @@ public class FeedIssue extends JFrame {
 			}
 		});
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		btnNewButton.setBounds(714, 399, 89, 23);
+		btnNewButton.setBounds(630, 371, 89, 23);
 		contentPane.add(btnNewButton);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(256, 88, 718, 272);
+		scrollPane.setBounds(256, 88, 614, 272);
 		contentPane.add(scrollPane);
 		
 		table = new JTable();
@@ -252,7 +252,7 @@ public class FeedIssue extends JFrame {
 		
 		JLabel lblNewLabel_8 = new JLabel("PaymentMode:");
 		lblNewLabel_8.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblNewLabel_8.setBounds(5, 354, 105, 26);
+		lblNewLabel_8.setBounds(10, 398, 105, 26);
 		contentPane.add(lblNewLabel_8);
 		
 		PM = new JComboBox();
@@ -262,7 +262,7 @@ public class FeedIssue extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		PM.setBounds(114, 359, 132, 21);
+		PM.setBounds(114, 405, 132, 21);
 		contentPane.add(PM);
 		
 		JButton btnNewButton_1 = new JButton("View");
@@ -281,7 +281,7 @@ public class FeedIssue extends JFrame {
 			}
 		});
 		btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		btnNewButton_1.setBounds(534, 399, 89, 23);
+		btnNewButton_1.setBounds(472, 371, 89, 23);
 		contentPane.add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("Submit");
@@ -296,7 +296,7 @@ public class FeedIssue extends JFrame {
 			}
 		});
 		btnNewButton_2.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		btnNewButton_2.setBounds(346, 399, 89, 23);
+		btnNewButton_2.setBounds(306, 371, 89, 23);
 		contentPane.add(btnNewButton_2);
 		
 		JButton btnNewButton_3 = new JButton("Delete");
@@ -323,7 +323,7 @@ public class FeedIssue extends JFrame {
 			}
 		});
 		btnNewButton_3.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		btnNewButton_3.setBounds(865, 396, 89, 23);
+		btnNewButton_3.setBounds(774, 371, 89, 23);
 		contentPane.add(btnNewButton_3);
 		 DOB = new JDateChooser();
 			DOB.addPropertyChangeListener(new PropertyChangeListener() {
@@ -341,17 +341,22 @@ public class FeedIssue extends JFrame {
 				public void ancestorRemoved(AncestorEvent arg0) {
 				}
 			});
-			DOB.setBounds(114, 53, 140, 20);
+			DOB.setBounds(114, 88, 140, 20);
 			contentPane.add(DOB);
 		
 		JLabel lblNewLabel_10 = new JLabel("Date:");
 		lblNewLabel_10.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblNewLabel_10.setBounds(64, 53, 46, 14);
+		lblNewLabel_10.setBounds(68, 88, 46, 14);
 		contentPane.add(lblNewLabel_10);
 		
+		JLabel lblNewLabel = new JLabel("Feed Issue");
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 30));
+		lblNewLabel.setBounds(449, 11, 171, 56);
+		contentPane.add(lblNewLabel);
+		
 		JLabel lblNewLabel_9 = new JLabel("New label");
-		lblNewLabel_9.setIcon(new ImageIcon(FeedIssue.class.getResource("/resources/resize-1584026584769005741MilkImages02103.jpg")));
-		lblNewLabel_9.setBounds(0, 0, 994, 437);
+		lblNewLabel_9.setIcon(new ImageIcon(FeedIssue.class.getResource("/resources/resize-1584026781174196280MilkWallpapers02110.jpg")));
+		lblNewLabel_9.setBounds(0, 0, 894, 437);
 		contentPane.add(lblNewLabel_9);
 		
 		

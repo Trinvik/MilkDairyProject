@@ -502,7 +502,7 @@ public class MemberCreation extends JFrame {
 		lblNewLabel_8 = new JLabel("MEMBER MASTER");
 		lblNewLabel_8.setBounds(324, 11, 212, 25);
 		contentPane.add(lblNewLabel_8);
-		lblNewLabel_8.setFont(new Font("Tahoma", Font.PLAIN, 22));
+		lblNewLabel_8.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 22));
 		
 		lblNewLabel_14 = new JLabel("New label");
 		lblNewLabel_14.setIcon(new ImageIcon(MemberCreation.class.getResource("/resources/resize-1584026781174196280MilkWallpapers02110.jpg")));

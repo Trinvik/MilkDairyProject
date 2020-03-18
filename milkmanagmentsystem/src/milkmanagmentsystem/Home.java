@@ -121,7 +121,8 @@ public class Home extends JFrame {
 		contentPane.add(lblNewLabel_1);
 		
 		JButton btnNewButton = new JButton("Member Master");
-		btnNewButton.setBackground(new Color(245, 255, 250));
+		btnNewButton.setForeground(Color.WHITE);
+		btnNewButton.setBackground(new Color(0, 153, 255));
 		btnNewButton.addPropertyChangeListener(new PropertyChangeListener() {
 			public void propertyChange(PropertyChangeEvent arg0) {
 			}
@@ -133,12 +134,13 @@ public class Home extends JFrame {
 			}
 			
 		});
-		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		btnNewButton.setBounds(90, 79, 179, 54);
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 16));
+		btnNewButton.setBounds(10, 86, 179, 54);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Milk Parameters");
-		btnNewButton_1.setBackground(new Color(240, 255, 240));
+		btnNewButton_1.setForeground(Color.WHITE);
+		btnNewButton_1.setBackground(new Color(0, 153, 255));
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -146,12 +148,13 @@ public class Home extends JFrame {
 				f.setVisible(true);
 			}
 		});
-		btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		btnNewButton_1.setBounds(90, 163, 179, 54);
+		btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD, 16));
+		btnNewButton_1.setBounds(10, 172, 179, 54);
 		contentPane.add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("Milk Acquirement");
-		btnNewButton_2.setBackground(new Color(240, 255, 240));
+		btnNewButton_2.setForeground(Color.WHITE);
+		btnNewButton_2.setBackground(new Color(0, 153, 255));
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Procurement p=new Procurement();
@@ -159,24 +162,26 @@ public class Home extends JFrame {
 				
 			}
 		});
-		btnNewButton_2.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		btnNewButton_2.setBounds(90, 258, 179, 54);
+		btnNewButton_2.setFont(new Font("Tahoma", Font.BOLD, 16));
+		btnNewButton_2.setBounds(10, 265, 179, 54);
 		contentPane.add(btnNewButton_2);
 		
 		JButton btnNewButton_3 = new JButton("Feed Issue");
-		btnNewButton_3.setBackground(new Color(240, 255, 240));
+		btnNewButton_3.setForeground(Color.WHITE);
+		btnNewButton_3.setBackground(new Color(0, 153, 255));
 		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				FeedIssue f= new FeedIssue();
 				f.setVisible(true);
 			}
 		});
-		btnNewButton_3.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		btnNewButton_3.setBounds(90, 361, 179, 54);
+		btnNewButton_3.setFont(new Font("Tahoma", Font.BOLD, 16));
+		btnNewButton_3.setBounds(10, 361, 179, 54);
 		contentPane.add(btnNewButton_3);
 		
 		JButton btnNewButton_4 = new JButton("Advance Payment");
-		btnNewButton_4.setBackground(new Color(240, 255, 240));
+		btnNewButton_4.setForeground(Color.WHITE);
+		btnNewButton_4.setBackground(new Color(0, 153, 255));
 		btnNewButton_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				AdvancePayment ap=new AdvancePayment();
@@ -184,24 +189,26 @@ public class Home extends JFrame {
 				
 			}
 		});
-		btnNewButton_4.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		btnNewButton_4.setBounds(90, 458, 179, 60);
+		btnNewButton_4.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnNewButton_4.setBounds(10, 457, 179, 60);
 		contentPane.add(btnNewButton_4);
 		
 		JButton btnNewButton_5 = new JButton("Reports");
-		btnNewButton_5.setBackground(new Color(240, 255, 240));
-		btnNewButton_5.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		btnNewButton_5.setForeground(Color.WHITE);
+		btnNewButton_5.setBackground(new Color(0, 153, 255));
+		btnNewButton_5.setFont(new Font("Tahoma", Font.BOLD, 16));
 		btnNewButton_5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				report r =new report();
 				r.setVisible(true);
 			}
 		});
-		btnNewButton_5.setBounds(90, 561, 179, 54);
+		btnNewButton_5.setBounds(10, 559, 179, 54);
 		contentPane.add(btnNewButton_5);
 		
 		JButton btnNewButton_6 = new JButton("Logout");
-		btnNewButton_6.setBackground(new Color(240, 255, 240));
+		btnNewButton_6.setForeground(Color.WHITE);
+		btnNewButton_6.setBackground(new Color(0, 153, 255));
 		btnNewButton_6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				int confirmValue = JOptionPane.showConfirmDialog(null, "Do you really want to Logout?");
@@ -209,60 +216,19 @@ public class Home extends JFrame {
 					System.exit(0);
 			}
 		});
-		btnNewButton_6.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		btnNewButton_6.setBounds(90, 648, 179, 54);
+		btnNewButton_6.setFont(new Font("Tahoma", Font.BOLD, 16));
+		btnNewButton_6.setBounds(10, 648, 179, 54);
 		contentPane.add(btnNewButton_6);
 		
 		JLabel lblNewLabel = new JLabel("New label");
 		lblNewLabel.setIcon(new ImageIcon(Home.class.getResource("/resources/output (10).png")));
-		lblNewLabel.setBounds(271, 70, 1096, 643);
+		lblNewLabel.setBounds(199, 70, 1168, 643);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_2 = new JLabel("MILK PRODUCER'S CO-OPERATIVE SOCIETY");
-		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 30));
-		lblNewLabel_2.setBounds(382, 6, 614, 54);
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 30));
+		lblNewLabel_2.setBounds(344, 5, 711, 54);
 		contentPane.add(lblNewLabel_2);
-		
-		JPanel panel = new JPanel();
-		panel.setBackground(new Color(224, 255, 255));
-		panel.setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
-		panel.setBounds(367, 0, 622, 72);
-		contentPane.add(panel);
-		
-		JLabel lblNewLabel_4 = new JLabel("New label");
-		lblNewLabel_4.setIcon(new ImageIcon(Home.class.getResource("/resources/resize-15840117841576020353shree.jpg")));
-		lblNewLabel_4.setBounds(0, 79, 91, 54);
-		contentPane.add(lblNewLabel_4);
-		
-		JLabel lblNewLabel_5 = new JLabel("New label");
-		lblNewLabel_5.setIcon(new ImageIcon(Home.class.getResource("/resources/resize-15840119441596331893logout.jpg")));
-		lblNewLabel_5.setBounds(0, 648, 91, 54);
-		contentPane.add(lblNewLabel_5);
-		
-		JLabel lblNewLabel_6 = new JLabel("New label");
-		lblNewLabel_6.setIcon(new ImageIcon(Home.class.getResource("/resources/resize-1584012209542679441reports.png")));
-		lblNewLabel_6.setBounds(0, 561, 91, 54);
-		contentPane.add(lblNewLabel_6);
-		
-		JLabel lblNewLabel_7 = new JLabel("New label");
-		lblNewLabel_7.setIcon(new ImageIcon(Home.class.getResource("/resources/resize-15840123681064559060payments.jpg")));
-		lblNewLabel_7.setBounds(0, 458, 91, 60);
-		contentPane.add(lblNewLabel_7);
-		
-		JLabel lblNewLabel_8 = new JLabel("New label");
-		lblNewLabel_8.setIcon(new ImageIcon(Home.class.getResource("/resources/resize-1584012591117765084feed.gif")));
-		lblNewLabel_8.setBounds(0, 363, 91, 52);
-		contentPane.add(lblNewLabel_8);
-		
-		JLabel lblNewLabel_9 = new JLabel("New label");
-		lblNewLabel_9.setIcon(new ImageIcon(Home.class.getResource("/resources/resize-15840127011332999899cans.jpg")));
-		lblNewLabel_9.setBounds(0, 258, 91, 54);
-		contentPane.add(lblNewLabel_9);
-		
-		JLabel lblNewLabel_10 = new JLabel("New label");
-		lblNewLabel_10.setIcon(new ImageIcon(Home.class.getResource("/resources/resize-1584013023562252304clr.jpg")));
-		lblNewLabel_10.setBounds(0, 163, 91, 54);
-		contentPane.add(lblNewLabel_10);
 		
 		JLabel lblNewLabel_3 = new JLabel("New label");
 		lblNewLabel_3.setIcon(new ImageIcon(Home.class.getResource("/resources/resize-15840150081082620365hh.jpg")));
